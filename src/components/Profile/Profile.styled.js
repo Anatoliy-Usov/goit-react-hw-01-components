@@ -1,37 +1,66 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  width: 300px;
+  margin: 20px auto;
+  background-color: #808080;
+
+  border: 2px solid grey;
+  border-radius: 5px;
+`;
+
 export const UserCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 10px;
-  width: 270px;
-  border-radius: 10px;
-  background-color: #f0f2f5;
+  padding: 20px;
+  width: 100%;
+
+  background-color: white;
 `;
 
-// export const Card = styled.div`
-//   width: 100%;
-//   height: 100%;
+export const UserImg = styled.img`
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 1px solid grey;
+`;
 
-//   text-align: center;
-//   margin: 10px;
-// `;
+export const UserContact = styled.p`
+  margin-top: 10px;
+  color: gray;
+  font-size: 16px;
+  font-weight: bold;
+`;
 
-// export const Image = styled.img``;
+export const StatList = styled.ul`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #c1d4ea;
+  text-align: center;
+`;
 
-// export const Statistic = styled.ul`
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   gap: 16px;
+export const ListItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 15px 0;
+`;
 
-//   margin: 10px;
-// `;
+export const StatInfo = styled.span`
+  display: block;
+  margin-bottom: 5px;
+  color: grey;
+`;
 
-// export const boxStatistic = styled.li`
-//   display: flex;
-//   width: 100px;
-//   height: 100px;
-// `;
+export const StatQuantity = styled.span`
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+`;
