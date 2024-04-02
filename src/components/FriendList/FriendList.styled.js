@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+const getBgColor = props => {
+  switch (props.children) {
+    case true:
+      return 'green';
+    case false:
+      return 'red';
+    default:
+      return 'aqua';
+  }
+};
+
 export const List = styled.li`
   list-style-type: none;
   padding: 10px;
@@ -33,17 +44,6 @@ export const IsOnline = styled.span`
   width: 20px;
   height: 20px;
   margin-left: 15px;
-
   border-radius: 50%;
-
-  background: ${props => {
-    switch (props.children) {
-      case true:
-        return 'green';
-      case false:
-        return 'red';
-      default:
-        return 'aqua';
-    }
-  }};
+  background: ${getBgColor};
 `;
