@@ -2,14 +2,18 @@ import styled from 'styled-components';
 
 export const Table = styled.table`
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   background: #dfe5e8;
   text-align: center;
   width: 600px;
+  border-radius: 5px;
 `;
 
 export const NameBlock = styled.thead`
   background: #03a9f4;
   height: 40px;
+  border-radius: 5px;
 `;
 
 export const TypeListKind = styled.th`

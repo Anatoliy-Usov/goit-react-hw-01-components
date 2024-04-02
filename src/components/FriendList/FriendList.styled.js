@@ -25,8 +25,8 @@ export const List = styled.li`
 `;
 
 export const AllFriendList = styled.ul`
-  padding: 0;
-  margin: 150px;
+  margin: auto;
+  width: 400px;
 `;
 
 export const ImagingAvatar = styled.img`
